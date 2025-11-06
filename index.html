@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular & TypeScript Playbook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <svg class="orb orb-one" viewBox="0 0 200 200">
+        <defs>
+          <linearGradient id="orb-gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7f5af0" />
+            <stop offset="100%" stop-color="#2cb1bc" />
+          </linearGradient>
+        </defs>
+        <circle cx="100" cy="100" r="100" fill="url(#orb-gradient-1)" />
+      </svg>
+      <svg class="orb orb-two" viewBox="0 0 200 200">
+        <defs>
+          <linearGradient id="orb-gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff7a45" />
+            <stop offset="100%" stop-color="#ffd166" />
+          </linearGradient>
+        </defs>
+        <circle cx="100" cy="100" r="100" fill="url(#orb-gradient-2)" />
+      </svg>
+    </div>
+    <header class="hero">
+      <nav class="nav">
+        <span class="logo">Tiny Tech Teacher</span>
+        <button id="downloadBtn" class="download-btn" aria-label="Download the lesson as HTML files">
+          Download Lesson
+        </button>
+      </nav>
+      <div class="hero-content">
+        <h1>Angular &amp; TypeScript Answers Explained Like You&#39;re 10</h1>
+        <p>
+          Study friendly, production ready explanations for the big Angular &amp; TypeScript questions.
+          Every answer comes with a playground story so little learners and senior engineers both get it.
+        </p>
+        <div class="hero-tags">
+          <span>Angular Basics</span>
+          <span>TypeScript Mindset</span>
+          <span>Real-World Analogies</span>
+          <span>Snackable Examples</span>
+        </div>
+        <a href="#questions" class="cta">Jump to the answers</a>
+      </div>
+      <div class="scroll-indicator" role="presentation">
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <section class="progress-section">
+        <div class="progress-info">
+          <p>Lesson Progress</p>
+          <div class="progress-meta">
+            <span id="progressCount">0 of 0 chapters unlocked</span>
+            <span id="progressPercent">0%</span>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <span id="progressFill"></span>
+        </div>
+      </section>
+      <section id="questions" class="questions-section">
+        <header class="section-header">
+          <h2>Guided Chapters</h2>
+          <p>
+            Each chapter gives you the grown-up idea and the playground explanation.
+            Click on anything that sparks your curiosity and watch it spring to life.
+          </p>
+          <div class="filter">
+            <label for="topicFilter">Filter</label>
+            <select id="topicFilter" aria-label="Filter chapters by topic">
+              <option value="all">All Topics</option>
+            </select>
+          </div>
+        </header>
+        <div id="questionGrid" class="question-grid" role="list"></div>
+      </section>
+      <section class="callout">
+        <h3>Need a quick reset?</h3>
+        <p>
+          Tap the magic button to reshuffle the chapters and keep your brain curious.
+          Learning that feels like play sticks around forever.
+        </p>
+        <button id="shuffleBtn" class="shuffle-btn">Shuffle Chapters</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Built with care for curious minds. Keep exploring, keep shipping.</p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"
+      integrity="sha512-HQZQN2aeSfIRspAqkOF4058t5vXLE8BgefjtsAp9MkihOQyEUG8i2JnpbcHgKRXIvwYYIOurHS5PTysQtYkr3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
